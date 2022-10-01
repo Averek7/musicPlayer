@@ -11,9 +11,9 @@ export default function Nav({libraryCheck,setLibraryCheck , setTheme , theme}){
         }
       };
     return(
-        <div className="nav"  >
+        <div className="nav" >
             <div style={{marginBottom:"0px"}} className="jumbotron jumbotron-fluid">
-                <h1 className="heading">Aryan Shinde Music App</h1>
+                <h1 className="heading">Aryan Shinde Music App<i class="fa-solid fa-music"></i></h1>
             </div>
             <button onClick={()=>{setLibraryCheck(!libraryCheck)}}><FontAwesomeIcon className="nav-burger" size="2x" icon={faAtom}/></button>
             <button onClick={toggleTheme}><FontAwesomeIcon className="nav-burger" size="2x" icon={faEye}/></button>
