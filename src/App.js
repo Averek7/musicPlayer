@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Wave from 'react-wavify';
 import Player from './components/player';
 import Song from './components/song';
 import "./styles/app.scss";
@@ -24,6 +25,14 @@ function App() {
   return (
     <div className={`App ${theme}`}>
       <Loading loadContent={loadContent} setLoadContent={setLoadContent}/>
+      <Wave fill='blue'
+        paused={false}
+        options={{
+          height:20,
+          amplitude:40,
+          speed:0.20,
+          points:4
+        }}/>
       <Nav libraryCheck={libraryCheck} setLibraryCheck={setLibraryCheck} setTheme={setTheme} theme={theme}/>
       <div className={`${libraryCheck ? "app-active":"app-no-active"}`}>
      <Song currentSong={currentSong}/>
