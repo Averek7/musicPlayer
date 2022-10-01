@@ -8,7 +8,7 @@ function CardPage(props){
                     {props.desc}
                 </Card.Text>
                 <div className="btn ml-auto">
-                    <Button variant="primary">More</Button>
+                    <Button variant="primary">More options</Button>
                 </div>
             </Card.Body>
             </Card>
