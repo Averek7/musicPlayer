@@ -25,7 +25,7 @@ function App() {
   return (
     <div className={`App ${theme}`}>
       <Loading loadContent={loadContent} setLoadContent={setLoadContent}/>
-      <Wave fill='blue'
+      <Wave fill='red'
         paused={false}
         options={{
           height:20,
@@ -36,7 +36,6 @@ function App() {
       <Nav libraryCheck={libraryCheck} setLibraryCheck={setLibraryCheck} setTheme={setTheme} theme={theme}/>
       <div className={`${libraryCheck ? "app-active":"app-no-active"}`}>
      <Song currentSong={currentSong}/>
-     yoyo
      <Player libraryCheck={libraryCheck} setCurrentSong={setCurrentSong} setSong={setSong} setFlag={setFlag} flag={flag} currentSong={currentSong} songs={song} />
      <Player libraryCheck={libraryCheck} setCurrentSong={setCurrentSong} setSong={setSong} setFlag={setFlag} flag={flag} currentSong={currentSong} songs={song} />
      {/* <Footer/> */}

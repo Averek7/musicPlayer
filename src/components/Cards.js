@@ -1,7 +1,7 @@
 function CardPage(props){
     return(
         <div className="cards">
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '19rem' }}>
             <Card.Body>
                 <Card.Title style={{ marginBottom:'30px' }}>{props.song}</Card.Title>
                 <Card.Text>
